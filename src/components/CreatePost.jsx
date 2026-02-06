@@ -19,7 +19,7 @@ function CreatePost() {
     if (image) formData.append('image', image);
 
     try {
-      await axios.post('http://localhost:5000/posts', formData);
+      await axios.post('https://mini-social-app-backend-f96z.onrender.com/', formData);
       alert('Post created');
       setText('');
       setImage(null);

@@ -8,7 +8,7 @@ function Signup({ onSignup }) {
 
   const handleSignup = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/signup', {
+      const res = await axios.post('https://mini-social-app-backend-f96z.onrender.com/', {
         email,
         password
       });

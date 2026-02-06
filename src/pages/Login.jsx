@@ -8,7 +8,7 @@ function Login({ onLogin, onSwitch }) {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/login', {
+      const res = await axios.post('https://mini-social-app-backend-f96z.onrender.com/', {
         email,
         password
       });
